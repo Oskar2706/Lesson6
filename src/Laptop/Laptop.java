@@ -72,7 +72,7 @@ public class Laptop {
             this.name = name;
             this.volume = volume;
             this.externaltype = externaltype;
-
+//
         }
 
         public HDD() {
