@@ -4,12 +4,13 @@ public class CreditCard {
     String numberScore;
     int sum;
 
-    public void getAdd() {
-        sum += sum;
+    public void getAdd(int sum1) {
+     sum = sum +sum1;
     }
 
-    public void getTakeOff() {
-        sum -= sum;
+    public void getTakeOff(int sum1) {
+
+     sum = sum - sum1;
     }
 
     CreditCard (String numberScore, int sum) {
@@ -23,9 +24,15 @@ public class CreditCard {
         CreditCard Card2 = new CreditCard("C87 654 32D", 35);
         CreditCard Card3 = new CreditCard("F67 456 23K", 90);
 
-        Card1.getAdd();
-        Card2.getAdd();
-        Card3.getTakeOff();
+        System.out.println(Card1);
+        System.out.println(Card2);
+        System.out.println(Card3);
+
+        System.out.println(" ");
+
+        Card1.getAdd(40);
+        Card2.getAdd(50);
+        Card3.getTakeOff(60);
 
         System.out.println(Card1);
         System.out.println(Card2);
